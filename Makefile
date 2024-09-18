@@ -1,7 +1,11 @@
 CC := cc
+SRC_DIR := .
 INCLUDE_DIR := ./program-option-lib
 COMPILE_FLAGS := -Wall
 
-bin/duongssl: duongssl.c $(wildcard $(INCLUDE_DIR)/*.h)
-	$(CC) duongssl.c -o bin/duongssl -I$(INCLUDE_DIR) $(COMPILE_FLAGS)
+bin/prime: prime.c
+	$(CC) $(SRC_DIR)/prime.c -o bin/prime -I$(INCLUDE_DIR) $(COMPILE_FLAGS)
+
+bin/duongssl: duongssl.c
+	$(CC) $(SRC_DIR)/duongssl.c -o bin/duongssl -I$(INCLUDE_DIR) $(COMPILE_FLAGS)
 
