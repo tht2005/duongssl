@@ -1,3 +1,6 @@
 [submodule "program-option-lib"]
 	path = program-option-lib
 	url = git@github.com:tht2005/program-option-lib.git
+[submodule "bigint"]
+	path = bigint
+	url = git@github.com:983/bigint.git
